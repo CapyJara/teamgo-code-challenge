@@ -30,7 +30,7 @@
     "test:watch": "npm run test -- --watch",
     "start": "node server.js",
     "start:watch": "nodemon server.js",
-    "seed": "node lib/utils/seedData.js"
+    "seed": "node lib/utils/seed1000.js"
   },
   "keywords": [],
   "author": "",
