@@ -42,25 +42,22 @@ Base url: https://teamgo-code-challenge.herokuapp.com/api/v1
 - Format: JSON
 - Headers:
   - Authorization: token (get token from signup/signin post)
-### Get all events
+### Get events and query by location and or by date
 - Route: /event
 - Type: GET
 - Paging - See paging section
-### Get events by location and or by date
-- Route: /event/where
-- Type: GET
-- Paging - See paging section
 - Query
-  - state - excepts on two letter abbreviation ex: or
+  - state - excepts only two letter abbreviation ex: or
   - city
   - start - starting date in format YYYY-MM-DD
   - end - end date in format YYYY-MM-DD
 - Notes:
+  - If no query, will return all events
   - Can search by location and date separately or together
   - If searching by city, state must be include
   - If searching by date, both start and end are required
   - If only wanting to search for single day, the end day is the day after ex: start=2020-01-01 end=2020-01-02
-  - ex: /api/v1/where?state=or&city=portland&start=2020-01-01&end=2020-01-15
+  - ex: /api/v1/event?state=or&city=portland&start=2020-01-01&end=2020-01-15
 ### Get events by id
 - Route: /event/:eventId
 - Type: GET
