@@ -93,4 +93,4 @@ Base url: https://teamgo-code-challenge.herokuapp.com/api/v1
 - Perpage:
   - (Optional) Add perpage to query ex: ?perpage=20
   - Perpage default is 50
-- Paging option is only available on get all events, and get events by location/date
+- Paging option is only available on get all events, and get events by location/date routes.
