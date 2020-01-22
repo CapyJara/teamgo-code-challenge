@@ -94,3 +94,8 @@ Base url: https://teamgo-code-challenge.herokuapp.com/api/v1
   - (Optional) Add perpage to query ex: ?perpage=20
   - Perpage default is 50
 - Paging option is only available on get all events, and get events by location/date routes.
+
+## Seeding the database
+- Route: /seed/"SEED_KEY"
+- This API has a route that will empty the database then seed it with 1000 events, 20 event organizers and 2000 event attendees. 
+- Since this route will drop the data base it require a secret key which you must ask me (Jared) in order to hit the route. The key is checked against a hidden env file and variable.
