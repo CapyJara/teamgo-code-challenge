@@ -94,5 +94,6 @@ Base url: https://teamgo-code-challenge.herokuapp.com/api/v1
 
 ## Seeding the database
 - Route: /seed/"SEED_KEY"
-- This API has a route that will empty the database then seed it with 1000 events, 20 event organizers and 2000 event attendees. 
-- Since this route will drop the data base it require a secret key which you must ask me (Jared) in order to hit the route. The key is checked against a hidden env file and variable.
+- This route will add 20 event organizers, 1000 events and 2000 event attendees to the database. 
+- This route requires a SEED_KEY, that you can only get by asking me (Jared), in order to use it. 
+- Please allow a few minutes after hitting this route to see the results.
