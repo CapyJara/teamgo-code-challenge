@@ -3,11 +3,13 @@
 - This API is built in node.js, uses an express server, a mongo database and uses mongoose for data modeling.
 ## Auth
 - The authentication uses bcrypt and jwt to keep non members from creating events, and only authorizes event organizers to update their events.
+- Users do not need to sign in to search events. This allows anyone to use the api, but only members are allowed to edit the database.
 ## Hosting
 - The server is hosted on Heroku and provisioned with a m-Lab database.
 ## Testing
-- This project used a test driven design based methodology where tests for models and routes where written first and then made to pass. I used jest for all my testing and travis as a continuous integration service.
-
+- This project used a test driven design based methodology where tests for models and routes where written first and then made to pass. I used jest for unit and e2e testing and travis as a continuous integration service.
+## Seeding
+- I created a package.json script that would run a file that seeds a local database, and I also created a seed route that seeds the deployed database. The route requires a secret key that is stored in the env variables and only available to people I give it to.
 
 # Routes
 Base url: https://teamgo-code-challenge.herokuapp.com/api/v1
