@@ -12,7 +12,7 @@
 - I created a package.json script that would run a file that seeds a local database, and I also created a seed route that seeds the deployed database. The route requires a secret key that is stored in the env variables and only available to people I give it to.
 
 # Routes
-Base url: https://teamgo-code-challenge.herokuapp.com/api/v1
+Base url: https://teamgo-code-challenge.herokuapp.com/api/
 
 ## User/Auth Routes:
 ### Signup
@@ -92,7 +92,7 @@ Base url: https://teamgo-code-challenge.herokuapp.com/api/v1
 - Perpage:
   - (Optional) Add perpage to query ex: ?perpage=20
   - Perpage default is 50
-- Paging option is only available on get all events, and get events by location/date routes.
+- Paging option is only available on get events route.
 
 ## Seeding the database
 - Route: /seed/"SEED_KEY"
